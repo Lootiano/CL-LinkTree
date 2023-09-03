@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0ae36d168d.js" crossorigin="anonymous"></script>
+    <style>
+        main {
+            background: rgb(66,237,119);
+            background: linear-gradient(90deg, rgba(66,237,119,0.923406862745098) 0%, rgba(54,208,200,0.80015756302521) 67%);
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 700px;
+            width: 600px;
+            border-radius: 20px;
+        }
+        div {
+            display: inline-flexbox;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+        }
+        button {
+            border: none;
+            width: 97%;
+            margin: 10px;
+            border-radius: 1em;
+            cursor: pointer;
+        }
+
+        #btn-insta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            font-size: 20px;
+            background: transparent;
+            border: 2px solid #962fbf;
+            padding: 15px 50px;
+            transition: background-color .4s ease-in-out;
+        }
+
+        #btn-insta:hover {
+            background: #982fc194;
+            color: #fff;
+        }
+
+        #btn-facebk {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            font-size: 20px;
+            background: transparent;
+            border: 2px solid #4267B2;
+            color: black;
+            padding: 15px 50px;
+            transition: background-color .4s ease-in-out;
+        }
+
+        #btn-facebk:hover {
+            background-color: #4268b394;
+            color: white;
+        }
+
+        #btn-twitch {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            font-size: 20px;
+            background: transparent;
+            border: 2px solid #6441a4;
+            color: black;
+            padding: 15px 50px;
+            transition: background-color .4s ease-in-out;
+        }
+
+        #btn-twitch:hover {
+            background-color: #6441a494;
+            color: white;
+        }
+
+        #btn-tiktok {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            font-size: 20px;
+            background: transparent;
+            border: 2px solid #ee1d51;
+            color: black;
+            padding: 15px 50px;
+            transition: background-color .4s ease-in-out;
+        }
+
+        #btn-tiktok:hover {
+            background-color: #69c9d094;
+            color: white;
+        }
+
+        #btn-youtube {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            font-size: 20px;
+            background: transparent;
+            border: 2px solid #ff0000;
+            color: black;
+            padding: 15px 50px;
+            transition: background-color .4s ease-in-out;
+        }
+
+        #btn-youtube:hover {
+            background-color: #ff000094;
+            color: white;
+        }
+    </style>
+    <script>
+        function redirectInstagram() {
+            window.open("https://instagram.com/rubensdiascantor?igshid=MzRlODBiNWFlZA==", "_blank")
+        }
+        
+        function redirectFacebook() {
+            window.open("https://www.facebook.com/rubens.dias.509", "_blank")
+        }
+
+        function redirectTwitch() {
+            window.open("https://www.twitch.tv/clacksg7", "_blank")
+        }
+        
+        function redirectTikTik() {
+            window.open("https://www.tiktok.com/@rubenscantor", "_blank")
+        }
+
+        function redirectYouTube() {
+            window.open("https://www.youtube.com/@ClacksGamer", "_blank")
+        }
+    </script>
+    <title>ClacksG7</title>
+</head>
+<body>
+    <main>
+        <div>
+            <button id="btn-insta" onclick="redirectInstagram()"><i class="fa-brands fa-instagram fa-fade"></i>Instagram</button>
+            <button id="btn-facebk" onclick="redirectFacebook()"><i class="fa-brands fa-facebook"></i>Facebook</button>
+            <button id="btn-twitch" onclick="redirectTwitch()"><i class="fa-brands fa-twitch"></i>Twitch</button>
+            <button id="btn-tiktok" onclick="redirectTwitch()"><i class="fa-brands fa-tiktok"></i>TikTok</button>
+            <button id="btn-youtube" onclick="redirectYouTube()"><i class="fa-brands fa-youtube"></i>Youtube</button>
+        </div>
+    </main>
+</body>
+</html>
